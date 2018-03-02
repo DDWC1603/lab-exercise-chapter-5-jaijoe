@@ -1,11 +1,20 @@
-//this is an unfinish program
-//finish up this program
-//take the value from x and y and sum it up.
-//this is a function related exercise, it need to be in a way where you put function in your program
-
-int sum(int x,int y)
+#include<iostream>
+using namespace std;
+int sum(int x, int y)
 {
 	int result;
-	result = x+y;
-
+	result=x+y;
+	cout<<"result: "<<result;
+}
+int main()
+{
+	int x, y;
+	
+	cout<<"Enter first integer: ";
+	cin>>x;
+	cout<<"Enter second integer: ";
+	cin>>y;
+	sum(x, y);
+	
+	return 0;
 }
