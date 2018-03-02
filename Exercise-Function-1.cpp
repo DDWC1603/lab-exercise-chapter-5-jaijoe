@@ -1,12 +1,10 @@
-//this is an uncomple program with function in it, please complete this program. thank you.
-//make the program so that when the user enter 'n' three time then it will break and print "the fudge!?"
-
 #include <iostream>
 using namespace std;
 
 
 int main()
 {
+	masuk_tak();
 }
 
 void masuk_tak()
@@ -14,8 +12,6 @@ void masuk_tak()
 	char ans;
 	
 	cout<<endl<<"Dia shoot masuk tak? (answer y-yes atau n-tidak"<<endl;
-	
-
 	ans=' ';
 	while(ans!='y'  ans!='y'){
 		cin>>ans;
