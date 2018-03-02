@@ -1,29 +1,30 @@
-//finish up this program.thanks.
-//the output will be something like a wave that is from this "+"
-//complete and fix the program below.
-
-#include <iostream>
-#include <iomanip>
-
+#include<iostream>
+#include<iomanip>
 using namespace std;
-
-void ombakOmbak(int repeat=3,int height=5,int up=2,int down=2)
+void ombakOmbak (int, int, int, int);
+void ombakKeluar();
+int i;
+void ombakOmbak (int repeat=3, int height=5, int up=2, int down=2)
 {
-	while(repeat >0)
+	while(repeat>0)
 	{
-		for(/*i<=up*/)
-		cout<<setw(height)<<right<<"+"<<endl;
-		for(/*i<=down*/)
-		cout<<"+"<<endl;
-		repeat --;
+		for(i=1;i<=up;i++)
+		{
+			cout<<setw(height)<<right<<"+"<<endl;
+		}
+		for(i=1;i<=down;i++)
+		{
+			cout<<"+"<<endl;
+		}
+		repeat--;
 	}
 }
-
-
-
-void OmbakKeluar()
+void ombakKeluar()
 {
-
 	cout<<"\nwaveDemo\n";
 	ombakOmbak();
+}
+int main(void)
+{
+	ombakKeluar();
 }
